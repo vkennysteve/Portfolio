@@ -1,2 +1,2 @@
 # Portfolio
-Host my Portfolio Website
+My professional website and freelance portfolio
