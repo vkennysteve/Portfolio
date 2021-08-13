@@ -146,7 +146,7 @@ div.firstPage {
     background: #fff;
 }
 
-@media only screen and (max-width:980px) {
+@media screen and (max-width:980px) {
     header>h3 {
         display: none;
     }
@@ -242,7 +242,7 @@ div.firstPage {
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr;
-    background: darkslategrey;
+    background: rgba(20, 20, 32, 0.9);
 }
 
 .image-wrapper {
@@ -273,12 +273,13 @@ div.firstPage {
     color: rgb(233, 225, 225);
 }
 
-/* Bucket.html begins */
+/* Bucket.html begins*/
 
 #bucket {
     margin: auto;
     max-width: fit-content;
     font-family: 'Courier New', Courier, monospace;
+    background: rgba(20, 20, 32, 0.9);
 }
 
 .bucketpic h2 {
@@ -405,4 +406,4 @@ footer {
     100% {
         background-position: 0% 50%;
     }
-}
+    
