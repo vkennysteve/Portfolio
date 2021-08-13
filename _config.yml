@@ -1,3 +1,5 @@
+theme: jekyll-theme-minimal
+
 # Site settings
 title: "Home Portfolio - Victor Kennysteve"
 description: "Web Designing portfolio made with Jekyll and gh_pages."
@@ -11,16 +13,10 @@ css:
 # portfolio settings
 portfolio_:                  "true"
 
-# Decide which sections to use
-# comment out to hide
-# resume_section_interests:       true
-
-# Resume social links
-# uncomment the options you wish to display, and add your own URL
-
 # Design settings
-portfolio_theme:                   default
+# portfolio_theme:                   default
 
-# Note: when editing locally, remember to restart
+# Note: comment out to hide
+# when editing locally, remember to restart
 # your Jekyll server when you edit this file. Changes
 # to _config.yml are only recognized when the server starts
