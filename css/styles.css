@@ -1,3 +1,15 @@
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -15,7 +27,8 @@ body {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-blend-mode: multiply;
-    /* animation: gradient 15s ease infinite; */
+    -webkit-animation: gradient 15s ease infinite;
+    animation: gradient 15s ease infinite;
 }
 
 header {
@@ -73,6 +86,7 @@ header ul a::after {
     background: #fff;
     opacity: 0.3;
     transition: all 0.5s;
+    -webkit-transition: all 0.5s;
 }
 
 header ul a::before {
@@ -108,7 +122,8 @@ div.firstPage {
     left: 50%;
     top: 50%;
     text-align: center;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
     color: #fff;
     font-family: monospace;
 }
@@ -146,7 +161,7 @@ div.firstPage {
     background: #fff;
 }
 
-@media screen and (max-width:980px) {
+@media only screen and (max-width:980px) {
     header>h3 {
         display: none;
     }
@@ -165,6 +180,7 @@ div.firstPage {
         flex-direction: column;
         width: auto;
         overflow: hidden;
+        -webkit-transition: all .5s ease-in-out;
         transition: all .5s ease-in-out;
     }
     header :checked~ul {
@@ -175,12 +191,14 @@ div.firstPage {
         display: block;
     }
     header :checked~.icon .line:nth-child(1) {
-        transform: translateY(10px) rotate(225deg);
+        -webkit-transform: translateY(10px) rotate(225deg);
+        transform: translateY(10px) rotate(225deg)
     }
     header :checked~.icon .line:nth-child(2) {
         opacity: 0;
     }
     header :checked~.icon .line:nth-child(3) {
+        -webkit-transform: translateY(-10px) rotate(-225deg);
         transform: translateY(-10px) rotate(-225deg);
     }
     img.profile {
@@ -209,18 +227,16 @@ div.firstPage {
     div.text-wrapper {
         width: 80vw;
         margin: 0 9%;
-        font-family: cursive;
+        font-family: monospace, 'Roboto', 'Open Sans', sans-serif;
     }
     div.text-wrapper p {
         color: #000;
-        font-family: cursive;
     }
     div.bucketpic {
         font-size: 14px;
     }
     #bucket {
         font-size: 14px;
-        font-family: 'Courier New', Courier, monospace;
     }
     div.footer {
         font-size: 14px;
@@ -304,10 +320,11 @@ div.firstPage {
     height: 600px;
     background: url(images/online-content-freelance-writing-jobs.jpg);
     overflow: hidden;
+    -webkit-animation: gradient 15s ease infinite;
     background-size: 100% 100%;
-    /* background-color: rgba(58, 62, 87, 0.849);
+    background-color: rgba(58, 62, 87, 0.849);
     background-blend-mode: multiply;
-    animation: gradient 15s ease infinite; */
+    animation: gradient 15s ease infinite;
 }
 
 /* footer starts here */
@@ -334,7 +351,7 @@ footer {
 
 .footer h3 {
     text-transform: uppercase;
-    font-family: monospace, 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: monospace, 'Roboto', 'Open Sans', sans-serif;
     color: #000;
     font-weight: bold;
     margin-bottom: 1%;
@@ -360,7 +377,7 @@ footer {
 
 .footer a {
     text-decoration: none;
-    font-family: monospace, 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: monospace, 'Roboto', 'Open Sans', sans-serif;
     font-size: 14px;
     color: #fff;
 }
@@ -378,7 +395,7 @@ footer {
     flex-wrap: wrap;
     font-size: 12px;
     color: rgb(190, 196, 197);
-    font-family: monospace, 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: monospace, 'Roboto', 'Open Sans', sans-serif;
 }
 
 /* Back to top button */
@@ -397,15 +414,3 @@ footer {
     color: black;
     font-size: 22px;
 }
-
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-    
