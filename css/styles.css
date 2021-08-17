@@ -15,7 +15,7 @@ body {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-blend-mode: multiply;
-    animation: gradient 15s ease infinite;
+    /* animation: gradient 15s ease infinite; */
 }
 
 header {
@@ -209,15 +209,18 @@ div.firstPage {
     div.text-wrapper {
         width: 80vw;
         margin: 0 9%;
+        font-family: cursive;
     }
     div.text-wrapper p {
         color: #000;
+        font-family: cursive;
     }
     div.bucketpic {
         font-size: 14px;
     }
     #bucket {
         font-size: 14px;
+        font-family: 'Courier New', Courier, monospace;
     }
     div.footer {
         font-size: 14px;
@@ -279,7 +282,6 @@ div.firstPage {
     margin: auto;
     max-width: fit-content;
     font-family: 'Courier New', Courier, monospace;
-    background: rgba(20, 20, 32, 0.9);
 }
 
 .bucketpic h2 {
@@ -303,9 +305,9 @@ div.firstPage {
     background: url(images/online-content-freelance-writing-jobs.jpg);
     overflow: hidden;
     background-size: 100% 100%;
-    background-color: rgba(58, 62, 87, 0.849);
+    /* background-color: rgba(58, 62, 87, 0.849);
     background-blend-mode: multiply;
-    animation: gradient 15s ease infinite;
+    animation: gradient 15s ease infinite; */
 }
 
 /* footer starts here */
